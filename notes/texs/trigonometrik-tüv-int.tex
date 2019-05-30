@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+\usepackage[turkish]{babel} %Türkçe bölüm isimleri
+\usepackage[utf8]{inputenc} %Türkçe karakterler
+\usepackage{lingmacros}
+\usepackage{tree-dvips}
+
+
+
+\begin{document}
+\title{Matematik-Bilgisayar Bilimleri}
+\author{Deniz Balcı\\
+}
+\renewcommand{\today}{Mayıs 31, 2019}
+\maketitle
+
+
+
+\section{Trigonometrik değerlerin türevi ve integrali}
+
+\subsection*{Trigonometrik fonksiyonların integrali}
+
+$\displaystyle \int sin(u)du$=$-cosu$\\
+$\displaystyle \int cos(u)du$=$sinu$\\
+$\displaystyle \int tan(u)du$=$ln secu =-ln cosu$\\
+$\displaystyle \int cot(u)du$=$ln sinu $\\
+$\displaystyle \int sec(u)du$=$ln (secu+tanu)= ln (u/2+\pi/2)$\\
+$\displaystyle \int csc(u)du$=$ln (csc u-cotu)= ln tan (u/2)$\\
+
+\subsection*{Ters Trigonometrik fonksiyonların integrali}
+
+$\displaystyle \int arctan(x)dx$=$xarctan(x)-\frac{1}{2}ln(1+x^2)+C$\\
+$\displaystyle \int arccot(x)dx$=$xarccot(x)+\frac{1}{2}ln(1+x^2)+C$\\
+$\displaystyle \int arcsin(x)dx$=$xarcsinx(x)+\sqrt{1-x^2}+C$\\
+$\displaystyle \int arccos(x)dx$=$xarccos(x)-\sqrt{1-x^2}+C$\\
+$\displaystyle \int arccsc(x)dx$=$xarccsc(x)+\ln\left(\sqrt{x^2-1}+x\right)+C$\\
+$\displaystyle \int arcsec(x)dx$=$xarcsec(x)-\ln\left(\sqrt{x^2-1}+x\right)+C$
+\subsection*{Hiperbolik fonksiyonların integralleri}
+
+$\displaystyle \int sinh(x)dx$=$cosh(x)+C$\\
+$\displaystyle \int cosh(x)$=$sinh(x)+C$\\
+$\displaystyle \int coth(x)$=$ln|(sinh(|x|)|+C$\\
+$\displaystyle \int tanh(x)$=$ln(cosh((x))+C$\\
+$\displaystyle \int csch(x)dx$=$ln| \tanh(\frac{x}{2}) |+C$\\
+$\displaystyle \int sech(x)dx$=$arctan(sinhx)+C$\\
+
+
+
+
+
+\section {Trigonometrik ve ters trigonometrik değerlerin türevi}
+\subsection*{Trigonometrik fonksiyonların türevi}
+$\frac{d}{dx}sin(x)$=$cos(x)$\\
+$\frac{d}{dx}cos(x)$=$-sin(x)$\\
+$\frac{d}{dx}tan(x)$=$\frac{1}{cos^2(x)}$=$sec^2(x)$\\
+$\frac{d}{dx}cot(x)$=$-\frac{1}{sin^2(x)}$=$-csc^2(x)$\\
+$\frac{d}{dx}csc(x)$=$-csc(x)cot(x)$\\
+$\frac{d}{dx}sec(x)$=$tan(x)sec(x)$\\
+
+\subsection*{Ters Trigonometrik fonksiyonların türevi}
+$\frac{d}{dx}arcsin(x)$=$\frac{1}{\sqrt{1-x^2}}$\\
+$\frac{d}{dx}arccos(x)$=$\frac{-1}{\sqrt{1-x^2}}$\\
+$\frac{d}{dx}arctan(x)$=$\frac{1}{1+x^2}$\\
+$\frac{d}{dx}arccot(x)$=$\frac{-1}{1+x^2}$\\
+$\frac{d}{dx}arcsec(x)$=$\frac{1}{|x|\sqrt{x^2-1}}$\\
+$\frac{d}{dx}arccsc(x)$=$\frac{-1}{|x|\sqrt{x^2-1}}$\\
+
+\subsection*{Hiperbolik fonksiyonların türevi}
+$\frac{d}{dx}sinh(x)$=$cosh(x)$\\
+$\frac{d}{dx}cosh(x)$=$sinh(x)$\\
+$\frac{d}{dx}tanh(x)$=$sech^2(x)$\\
+$\frac{d}{dx}coth(x)$=$-csch^2(x)$\\
+$\frac{d}{dx}sech(x)$=$-sech(x)tanh(x)$\\
+$\frac{d}{dx}csch(x)$=$-csch(x)coth(x)$\\
+
+
+\end{document}
