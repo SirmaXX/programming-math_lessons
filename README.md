@@ -1,4 +1,5 @@
 #  Müfredat syllabus
+## Math programming
 - Sayılar(numbers)
 - Mantık(sayılar)
 - Kümeler(sets)
@@ -7,3 +8,4 @@
 - Matris(Matrix)
 - Türev(Derivative)
 - İntegral(integration)
+##Statistical Programming
