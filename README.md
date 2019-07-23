@@ -8,4 +8,4 @@
 - Matris(Matrix)
 - Türev(Derivative)
 - İntegral(integration)
-##Statistical Programming
+## Statistical Programming
