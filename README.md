@@ -9,3 +9,5 @@
 - Türev(Derivative)
 - İntegral(integration)
 ## Statistical Programming
+## Functional Programming
+-Lambda Calculus
