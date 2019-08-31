@@ -10,4 +10,4 @@
 - İntegral(integration)
 ## Statistical Programming
 ## Functional Programming
--Lambda Calculus
+- Lambda Calculus
