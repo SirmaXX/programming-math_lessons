@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+
+
+\usepackage[utf8]{inputenc} %Türkçe karakterler
+\usepackage{amsmath} %matematik kütüphanesi
+\usepackage{graphicx} %grafik kütüphanesi
+\usepackage{hyperref} %url paketi
+
+% yazar hakkında bilgiler
+\title{Lambda Calculus}
+\date{2019-08-31}
+\author{Deniz Balcı}
+% yazar hakkında bilgiler
+
+
+% içerik hakkında bilgiler
+\begin{document}
+% sayfa numalandırma
+  \pagenumbering{gobble}
+  \maketitle
+  
+  
+  \section{ ($|\lambda|$ Lambda Calculus nedir ?}
+   Lambda kalkülüs ($lambda$ -Kalkülüs, Lambda Calculus) fonksiyonları soyutlama (abstraction), bağlama (binding), uygulama (application) ve ikame etme (substitution) kavramları üzerine kurulu bir hesaplama modelidir.Turing-church
+\subsection{Lambda fonksiyonu nedir ?}
+Lambda fonksiyonu ,Lambda kalkülüsten türetilmiş anonim fonksiyonlar yazmamızı sağlayan fonksiyondur.
+\\
+Örnek bilgisayar fonksiyonları
+\\
+\href{https://stackoverflow.com/questions/16501/what-is-a-lambda-function}{https://stackoverflow.com/questions/16501/what-is-a-lambda-function}
+
+\section{Lambda Calculus Kuralları}
+\subsection{Fonksiyon yapısı}
+expr -> $lambda$ var.expr| expr expr| var (expr)
+not:Bu ifade Context-Free Grammar ile oluşturulmuştur.Bir ifade lamba değikeni.ifade veya ifade ifade veya parantez içinde değişken olabilir.Not:sayıların mutlaka tam sayı olması gerekli.
+\subsection{Lambda Fonksiyonu ile temel  Örnekler}
+$|\lambda|$ x.(x+1) =2 bu durumda x =3 olur.\\
+Bu ifadenin anlamı x değişkeni oluştur ($|\lambda|$x)\\
+x ifadesine 1 ekle  (x =2 )\\
+2+1 =3 \\
+ şimdide bir sayının karesini alan bir fonksiyon oluşturalım.
+ $|\lambda|$ x.(x*x)  bu ifadenin anlamı ise 
+x değişkeni al kendisi ile çarp demektir.\\
+Bu tip işlemleri 4 işlem ile yapabiliriz.(+ ,- , * ,/ ) şimdi ise 2 değişken kullanarak 2 değişkeni toplayan bir fonksiyon üretelim.\\
+$|\lambda|$ x.$|\lambda|$ y (x+y) lambda x ve lambda y bizim değişkenlerimiz 2 farklı değişkene ait rakamların toplamını vermiş olduk.İstediğiniz kadar değişken ekleyebilirsiniz.
+
+ 
+\subsection{Mantıksal lambda fonksiyonları }
+Şimdi ise daha basit (ancak en karmaşık olabilen) doğru,yanlış veya değil kavramlarına bakalım. \\
+TRUE =$|\lambda|$ x.$|\lambda|$ y .x  \\
+FALSE=$|\lambda|$ x.$|\lambda|$ y .y  \\
+NOT =$|\lambda|$ b.b.FALSE.TRUE  \\
+x değişkenini doğru ve  y değişkenini yanlış olarak belirleyelim.1.fonksiyonda 2 x ve y adında 2 parametremiz mevcut ve bu 2 değeri alıp sadece 1.değeri yani x i döndüren fonksiyona sahibiz.\\
+2.fonksiyonu incelediğimizde ise x ve y değerlerini alıp  y değerini döndürüyor yani yanlış  değeri döndürüyor.\\
+3.fonksiyonu incelediğimizde ise girilen değerin değilini (yani zıttını çevirir) güzel bir örnek ile açıklayalım.\\
+NOT TRUE = $|\lambda|$ b.b.FALSE.TRUE   ifademizi açalım.\\
+NOT TRUE = $|\lambda|$ b.b. $|\lambda|$ x.$|\lambda|$ y .x. $|\lambda|$ x.$|\lambda|$ y .x\\
+=TRUE
+\\ Burada x değerini  denklemimiz şuna dönüşüyor.\\
+$|\lambda|$ b.b  bu fonksiyonumuz  x değerini girdiğinde x değerini döndürür yani TRUE olur ve uygulamamız buna dönüşür\\
+($|\lambda|$x.$|\lambda|$y.x.y )$|\lambda|$ x.$|\lambda|$ y .x parantez içindeki fonksiyon işe yaramaz ve sadece x yani true fonksiyonu kalır.sonuç true dur
+
+
+  \newpage
+
+\section{Kaynakça}
+\begin{enumerate}
+	\item  \href{https://www.youtube.com/watch?v=eis11j_iGMs}{Lambda Matematik - Computerphile}.
+	\item  \href{https://www.youtube.com/watch?v=9l6YVf0xqIs}{Bilgisayar Kavramlari - Part 1}.
+	\item  \href{https://www.youtube.com/watch?v=v0cNGm5YgZ8}{Bilgisayar Kavramlari - Part 2}.
+	\item  \href{https://blog.lacriment.com/2019-02-01/fonskiyonel-programlama-1-lambda-kalkulus-1}{blog.lacriment.com}.
+	\item  \href{https://stackoverflow.com/questions/16501/what-is-a-lambda-function}{what is lambda function}
+	
+	
+\end{enumerate}
+
+
+
+
+
+\end{document}
